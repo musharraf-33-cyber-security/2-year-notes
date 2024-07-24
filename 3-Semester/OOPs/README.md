@@ -1,7 +1,7 @@
 # Table of Contents
 
 - [Object Oriented Programming in C++](#object-oriented-programming-in-c++)
-- [1 Class](#1-Class)
+- [1 Class](#1-class)
 - [2. Object](#2-object)
 - [3. Encapsulation](#3-encapsulation)
   - [Types of Encapsulation](#types-of-encapsulation)
