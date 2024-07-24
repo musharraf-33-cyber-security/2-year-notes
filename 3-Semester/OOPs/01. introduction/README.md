@@ -10,7 +10,49 @@ OOP is based on several fundamental concepts, which act as its building blocks:
 
 1. **Class**: A blueprint for creating objects (a particular data structure), providing initial values for state (member variables or fields), and implementations of behavior (member functions or methods).
 
+    ### Class
+    The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.
+
+    For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, the Car is the class, and wheels, speed limits, and mileage are their properties.
+
+    ```cpp
+    class Car {
+        int speedLimit;
+        int mileage;
+    public:
+        void applyBrakes() {}
+        void increaseSpeed() {}
+    };
+    ```
+
 2. **Objects**: Instances of classes. Objects hold data and can perform functions defined by their class.
+
+    ### Object
+    An Object is an identifiable entity with some characteristics and behavior. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e., an object is created) memory is allocated.
+
+    ```cpp
+    // C++ Program to show the syntax/working of Objects as a part of Object Oriented Programming
+    #include <iostream>
+    using namespace std;
+
+    class Person {
+        char name[20];
+        int id;
+    public:
+        void getDetails() {}
+    };
+
+    int main() {
+        Person p1; // p1 is an object
+        return 0;
+    }
+    ```
+
+    Objects take up space in memory and have an associated address like a record in Pascal or structure or union. When a program is executed, the objects interact by sending messages to one another. Each object contains data and code to manipulate the data.
+
+    [Copy Code](# "class Person { char name[20]; int id; public: void getDetails() {} }; int main() { Person p1; return 0; }")
+
+    [Run Code](https://onlinegdb.com/fork/rJmSx4_FH "class Person { char name[20]; int id; public: void getDetails() {} }; int main() { Person p1; return 0; }")
 
 3. **Encapsulation**: The bundling of data and the methods that operate on that data within one unit, e.g., a class in C++. It restricts direct access to some of the object's components, which can prevent the accidental modification of data.
 
@@ -40,10 +82,7 @@ In C++, OOP is a paradigm that provides a clear modular structure for programs, 
 These concepts help in creating reusable code and reducing redundancy.
 
 ## Visual Representation
-
-The following image depicts the core OOP concepts:
-
-![OOP Concepts](image.png)
+![OOPs-Concepts](https://github.com/user-attachments/assets/8e54733e-f1a9-47a8-9ac8-d373b44a3d41)
 
 ## Conclusion
 
@@ -55,10 +94,6 @@ OOP in C++ facilitates the creation of programs that are more modular, easier to
 
 - [OOP Concepts](https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/)
 - [Detailed OOP in C++](https://www.javatpoint.com/cpp-oops-concepts)
-
-## Last Updated
-
-This document was last updated on 18 Apr, 2024.
 
 ---
 
