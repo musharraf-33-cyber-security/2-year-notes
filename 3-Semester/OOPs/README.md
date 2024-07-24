@@ -54,7 +54,7 @@ Data members are the data variables and member functions are the functions used 
 In the above example of class Car, the data member will be speed limit, mileage, etc and member functions can apply brakes, increase speed, etc.
 We can say that a Class in C++ is a blueprint representing a group of objects which shares some common properties and behaviors.
 
-## 2. Object                                                                [Move Up](#table-of-contents)
+## 2. Object                                                              [Move Up](#table-of-contents)
 An Object is an identifiable entity with some characteristics and behavior. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
 
 
