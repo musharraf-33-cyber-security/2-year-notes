@@ -495,7 +495,7 @@ Inside first_space
 
 
 
-[Table of Contents](#Table of Contents) 
+[Table of Contents]_(#Table of Contents)_ 
 
 read more 
 [namespace](https://www.geeksforgeeks.org/namespace-in-c/)
