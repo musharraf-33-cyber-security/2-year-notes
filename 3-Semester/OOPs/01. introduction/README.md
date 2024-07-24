@@ -1,3 +1,37 @@
+# Table of Contents
+
+1. [Object Oriented Programming in C++](#object-oriented-programming-in-c)
+2. [Key Concepts of OOP](#key-concepts-of-oop)
+   - [Class](#class)
+   - [Objects](#objects)
+   - [Encapsulation](#encapsulation)
+   - [Abstraction](#abstraction)
+   - [Polymorphism](#polymorphism)
+   - [Inheritance](#inheritance)
+   - [Dynamic Binding](#dynamic-binding)
+   - [Message Passing](#message-passing)
+3. [Characteristics of an Object-Oriented Programming Language](#characteristics-of-an-object-oriented-programming-language)
+4. [OOPS Concepts in C++](#oops-concepts-in-c)
+5. [Differences between Procedural and Object-Oriented Programming](#differences-between-procedural-and-object-oriented-programming)
+   - [Procedural Programming](#procedural-programming)
+   - [Object-Oriented Programming](#object-oriented-programming)
+   - [Comparison](#comparison)
+6. [Functional Programming vs Object-Oriented Programming](#functional-programming-vs-object-oriented-programming)
+   - [Functional Programming](#functional-programming)
+   - [Object-Oriented Programming](#object-oriented-programming-1)
+   - [Comparison](#comparison-1)
+7. [Namespace in C++](#namespace-in-c)
+   - [Introduction](#introduction)
+   - [Defining a Namespace](#defining-a-namespace)
+   - [Advantages of Namespaces](#advantages-of-namespaces)
+   - [Example of Namespace Usage](#example-of-namespace-usage)
+   - [Nested Namespaces](#nested-namespaces)
+   - [Namespace Scope](#namespace-scope)
+8. [Conclusion](#conclusion)
+9. [References](#references)
+
+
+
 # Object Oriented Programming in C++
 
 ## Overview
