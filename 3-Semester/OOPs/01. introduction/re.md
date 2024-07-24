@@ -30,7 +30,7 @@
 8. [Conclusion](#conclusion)
 9. [References](#references)
  
-[Table of Contents](#Table of Contents) 
+
 ## Object-Oriented Programming (OOP) 
 
 OOP stands for Object-Oriented Programming. It breaks a program into objects, which encapsulate data and functions. Key concepts of OOP include Classes, Objects, Polymorphism, Abstraction, Encapsulation, and Inheritance. Some popular OOP languages include Objective C, Perl, Java, Python, Modula, Ada, Simula, C++, Smalltalk, and Common Lisp.
@@ -493,8 +493,7 @@ Output
 Inside first_space
 ```
 
-
- [table](#Table of Contents)
+[Move Up](#table-of-contents)
  
 
 read more 
