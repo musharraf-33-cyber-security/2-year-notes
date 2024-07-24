@@ -42,7 +42,9 @@ Objects communicate with one another by sending and receiving information to eac
 
 The following image depicts the core OOP concepts:
 
-![OOP Concepts](image.png)
+![OOPs-Concepts](https://github.com/user-attachments/assets/915fd2f6-6cb6-4b14-ac47-ae2dee274be2)
+
+ 
 
 ## Practical Examples
 
