@@ -176,7 +176,7 @@ OOP in C++ facilitates the creation of programs that are more modular, easier to
 
 ## References
 ---
- -[OOP Concepts](https://www.geeksforgeeks.org/object-oriented-programming-in-cpp/) 
+ -[OOP Concepts](https://www.geeksforgeeks.org/namespace-in-c/) 
  
  -[Detailed OOP in C++](https://www.javatpoint.com/cpp-oops-concepts)
 
