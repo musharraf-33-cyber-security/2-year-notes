@@ -31,12 +31,14 @@
 9. [References](#references)
 
 
-[Move Up](#table-of-contents)
+ 
 # Object Oriented Programming in C++
 
 ## Overview
 
 Object-oriented programming (OOP) uses objects in programming. The main aim of OOP is to implement real-world entities like inheritance, hiding, polymorphism, etc., in programming. It aims to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+
+[Move Up](#table-of-contents)
 
 ## Key Concepts of OOP
 
@@ -62,8 +64,8 @@ OOP is based on several fundamental concepts, which act as its building blocks:
 2. **Objects**: Instances of classes. Objects hold data and can perform functions defined by their class.
 
 
-[Move Up](#table-of-contents)
-    ### Object
+ 
+ ### Object
     An Object is an identifiable entity with some characteristics and behavior. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e., an object is created) memory is allocated.
 
     ```cpp
@@ -129,11 +131,13 @@ These concepts help in creating reusable code and reducing redundancy.
 
 
 
-[Move Up](#table-of-contents)
+ 
 
 ## Differences between Procedural and Object-Oriented Programming
 
-### Procedural Programming
+
+
+### Procedural Programming                                              [Move Up](#table-of-contents)
 
 Procedural Programming can be defined as a programming model which is derived from structured programming, based upon the concept of calling procedures. Procedures, also known as routines, subroutines, or functions, simply consist of a series of computational steps to be carried out. During a program’s execution, any given procedure might be called at any point, including by other procedures or itself.
 
@@ -145,7 +149,7 @@ Object-oriented programming can be defined as a programming model based upon the
 
 **Languages used in Object-Oriented Programming**: Java, C++, C#, Python, PHP, JavaScript, Ruby, Perl, Objective-C, Dart, Swift, Scala.
 
-### Comparison
+### Comparison                                                            [Move Up](#table-of-contents)
 
 | **Procedural Oriented Programming**                                    | **Object-Oriented Programming**                                          |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------|
