@@ -1,6 +1,6 @@
 ## Table of Contents:
-1. [Object Oriented Programming in C++](## Object-Oriented-Programming-in-C++)
-2. [There are some basic concepts that act as the building blocks of OOPs.](## There-are-some-basic concepts-that-act-as-the-building-blocks-of-OOPs.)
+1.  [Object Oriented Programming in C++](## Object-Oriented-Programming-in-C++)
+2.  [There are some basic concepts that act as the building blocks of OOPs.](## There-are-some-basic concepts-that-act-as-the-building-blocks-of-OOPs.)
 
 ## Object Oriented Programming in C++
  
