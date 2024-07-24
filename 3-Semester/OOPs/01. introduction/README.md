@@ -32,15 +32,15 @@
 
 
  
-# Object Oriented Programming in C++
+# Object Oriented Programming in C++                                [Move Up](#table-of-contents)
 
 ## Overview
 
 Object-oriented programming (OOP) uses objects in programming. The main aim of OOP is to implement real-world entities like inheritance, hiding, polymorphism, etc., in programming. It aims to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
-[Move Up](#table-of-contents)
+ 
 
-## Key Concepts of OOP
+## Key Concepts of OOP                                              [Move Up](#table-of-contents)
 
 OOP is based on several fundamental concepts, which act as its building blocks:
 
@@ -65,7 +65,7 @@ OOP is based on several fundamental concepts, which act as its building blocks:
 
 
  
- ### Object
+ ### Object                                                             [Move Up](#table-of-contents)
     An Object is an identifiable entity with some characteristics and behavior. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e., an object is created) memory is allocated.
 
     ```cpp
@@ -105,9 +105,9 @@ OOP is based on several fundamental concepts, which act as its building blocks:
 8. **Message Passing**: Objects communicate with one another by sending and receiving information to each other. Messages (function calls) are sent to invoke behavior.
 
 
-[Move Up](#table-of-contents)
+ 
 
-## Characteristics of an Object-Oriented Programming Language
+## Characteristics of an Object-Oriented Programming Language               [Move Up](#table-of-contents)
 
 OOP languages share several common characteristics, including but not limited to the above key concepts. They facilitate a modular approach to programming and make it easier to manage and modify complex systems.
 
@@ -174,9 +174,9 @@ Object-oriented programming can be defined as a programming model based upon the
 | **Examples**: C, FORTRAN, Pascal, Basic, etc.                          | **Examples**: C++, Java, Python, C#, etc.                                |
 
 
-[Move Up](#table-of-contents)
+ 
 
-## Functional Programming vs Object-Oriented Programming
+## Functional Programming vs Object-Oriented Programming                    [Move Up](#table-of-contents)
 
 ### Functional Programming
 
@@ -186,7 +186,7 @@ In functional programming, we have to build programs using functions. An example
 
 Object-oriented programming is built by using classes and objects. In this, we have concepts of encapsulation, inheritance, polymorphism, and data abstraction.
 
-### Comparison
+### Comparison                                                            [Move Up](#table-of-contents)
 
 | **Functional Programming**                                             | **Object-Oriented Programming**                                          |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -204,7 +204,7 @@ Object-oriented programming is built by using classes and objects. In this, we h
 
 ---
 
-## References - Read more About Difference 
+## References - Read more About Difference                                   [Move Up](#table-of-contents)
 ---
    -[OOP -Differences between Procedural and Object Oriented Programming](https://www.geeksforgeeks.org/differences-between-procedural-and-object-oriented-programming/)
 
@@ -220,9 +220,9 @@ Object-oriented programming is built by using classes and objects. In this, we h
 
 
 
- [Move Up](#table-of-contents)
  
-## Object-Oriented Programming (OOP)
+ 
+## Object-Oriented Programming (OOP)                                      [Move Up](#table-of-contents)
 
 OOP stands for Object-Oriented Programming. It breaks a program into objects, which encapsulate data and functions. Key concepts of OOP include Classes, Objects, Polymorphism, Abstraction, Encapsulation, and Inheritance. Some popular OOP languages include Objective C, Perl, Java, Python, Modula, Ada, Simula, C++, Smalltalk, and Common Lisp.
 
@@ -238,10 +238,10 @@ OOP stands for Object-Oriented Programming. It breaks a program into objects, wh
 - **Simplified Communication**: Message passing techniques simplify interface descriptions and communication between objects.
 - **Detailed Modeling**: Data-centered design allows capturing more details of the model in an implementable form.
 
-[Move Up](#table-of-contents)
+ 
 
 
-### Disadvantages of OOP
+### Disadvantages of OOP                                                   [Move Up](#table-of-contents)
 - **Increased Size**: OOP programs can be larger than procedural ones, leading to slower execution times.
 - **Limited Applicability**: OOP is not suitable for all types of problems and cannot be universally applied.
 - **Complex Design**: Effective use of OOP requires strong design and planning skills.
@@ -249,11 +249,10 @@ OOP stands for Object-Oriented Programming. It breaks a program into objects, wh
 - **Object Overhead**: Everything is treated as an object, necessitating careful consideration in its application.
 
 
+ 
 
-[Move Up](#table-of-contents)
 
-
-## Application of OOP in C++
+## Application of OOP in C++                                             [Move Up](#table-of-contents)
 
 ### Real-Time System Design
 OOP simplifies handling complexities inherent in real-time systems.
@@ -283,9 +282,8 @@ OOP supports creating object-oriented client-server applications.
 OOP can be used in manufacturing and design applications, such as blueprint and flowchart generation.
 
 
-[Move Up](#table-of-contents)
-
-## Namespace in C++
+ 
+## Namespace in C++                                                         [Move Up](#table-of-contents)
 
 ### Introduction
 Namespaces in C++ provide a way to group identifiers such as variables, methods, and classes into a logical scope. They help avoid naming conflicts, especially when combining multiple libraries.
@@ -306,17 +304,17 @@ namespace namespace_name {
  
 
 
-## Namespace in C++ | Set 1 (Introduction)
+## Namespace in C++ | Set 1 (Introduction)                                [Move Up](#table-of-contents)
 
 ### What is a Namespace?
 
 In C++, a namespace provides a space to define or declare identifiers, such as variables, methods, and classes. Essentially, a namespace creates a scope within which these identifiers are defined. This helps in organizing code and avoiding naming conflicts.
-
-### Why Use Namespaces?
+ 
+### Why Use Namespaces?                                                     [Move Up](#table-of-contents)
 
 Namespaces are crucial in avoiding name collisions, especially when working with large codebases or integrating multiple libraries. For example, you might be writing code with a function named `xyz()`, and another library might also define a function with the same name. Without namespaces, the compiler would have no way of distinguishing between these two functions.
 
-### How Namespaces Help
+### How Namespaces Help                                                      [Move Up](#table-of-contents)
 
 A namespace allows you to encapsulate identifiers, ensuring that similar names used in different contexts do not interfere with each other. This additional layer of information helps differentiate between functions, classes, variables, and other identifiers with the same name but residing in different namespaces.
 
@@ -342,7 +340,7 @@ namespace ExternalLib {
 ```
 
 
-## Defining a Namespace in C++
+## Defining a Namespace in C++                                  [Move Up](#table-of-contents)
 
 ### How to Define a Namespace
 
@@ -364,9 +362,9 @@ namespace namespace_name
 }
 ```
 
-[Move Up](#table-of-contents)
+ 
 
-### Advantages of Namespaces
+### Advantages of Namespaces                                             [Move Up](#table-of-contents)
 
 Namespaces are crucial for managing the complexity of large codebases. They provide the following benefits:
 
@@ -374,8 +372,8 @@ Namespaces are crucial for managing the complexity of large codebases. They prov
   
 - **Organize Code:** Namespaces help in grouping related code together, making the codebase more organized and manageable.
 
-### Example of Namespace Usage
-
+### Example of Namespace Usage                                         [Move Up](#table-of-contents)
+ 
 Consider a scenario where you are using a library that has a function called `xyz()`, and your own code also has a function named `xyz()`. Without namespaces, the compiler would not be able to distinguish between the two functions. Here’s how namespaces can resolve this issue:
 
 ```cpp
@@ -402,9 +400,9 @@ int main() {
 
 
 
-[Move Up](#table-of-contents)
+ 
 
-## Nested Namespaces
+## Nested Namespaces                                                [Move Up](#table-of-contents)
 
 Namespaces can be nested, which means you can define one namespace inside another. This allows for a more granular organization of code. The syntax for nested namespaces is as follows:
 
@@ -465,9 +463,9 @@ Output
 ``` cpp
 Inside second_space
 ```
-# Let us see how namespace scope the entities including variable and functions:
-
-```cpp
+# Let us see how namespace scope the entities including variable and functions:  
+                                                                 [Move Up](#table-of-contents)
+```cpp 
 
 #include <iostream>
 using namespace std;
@@ -505,9 +503,8 @@ Inside first_space
 Inside second_space
 ```
 
-[Move Up](#table-of-contents)
-
-# Consider the following C++ program: 
+ 
+# Consider the following C++ program:                                       [Move Up](#table-of-contents)
 ```cpp
 // A program to demonstrate need of namespace
 int main()
@@ -595,10 +592,10 @@ namespace namespace_name
 -We can split the definition of namespace over several units.
 
 
-[Move Up](#table-of-contents)
+ 
 
-
-# Defining a Namespace:
+ 
+# Defining a Namespace:                                                     [Move Up](#table-of-contents)
 A namespace definition begins with the keyword namespace followed by the namespace name as follows:
 ```
 namespace namespace_name{
@@ -663,7 +660,7 @@ Inside second_space
 ```
 
 
-# The using directive:
+# The using directive:                                                      [Move Up](#table-of-contents)
 You can avoid prepending of namespaces with the using namespace directive. This directive tells the compiler that the subsequent code is making use of names in the specified namespace. The namespace is thus implied for the following 
 code:
 ```cpp
@@ -708,10 +705,10 @@ Inside first_space
 ```
 
 
-[Move Up](#table-of-contents)
+ 
 
 
-read more 
+read more                                                                    [Move Up](#table-of-contents)
 [namespace](https://www.geeksforgeeks.org/namespace-in-c/)
 
 
@@ -720,20 +717,18 @@ read more
 
 
 
+ 
 
-[Move Up](#table-of-contents)
-
-## Conclusion
+## Conclusion                                                             [Move Up](#table-of-contents)
 
 OOP in C++ facilitates the creation of programs that are more modular, easier to maintain, and more intuitive to understand. By mastering these concepts, developers can build robust and scalable software applications.
 
 ---
 
+ 
 
-[Move Up](#table-of-contents)
-
-## References
----
+## References                                                               [Move Up](#table-of-contents)
+---  
  -[OOP Concepts](https://www.geeksforgeeks.org/namespace-in-c/) 
  
  -[Detailed OOP in C++](https://www.javatpoint.com/cpp-oops-concepts)
