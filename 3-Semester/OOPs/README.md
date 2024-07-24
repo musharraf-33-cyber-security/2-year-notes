@@ -1,5 +1,4 @@
 # Table of Contents
-
 - [Object Oriented Programming in C++](#object-oriented-programming-in-c++)
 - [1 Class](#1-class)
 - [2. Object](#2-object)
@@ -23,7 +22,7 @@
     - [B. Virtual Function](#b-virtual-function)
 - [6. Inheritance](#6-inheritance)
 - [7. Dynamic Binding](#7-dynamic-binding)
-
+        - [Message Passing](#message-passing)
 ---
 
 
@@ -52,8 +51,8 @@ Object-oriented programming – As the name suggests uses objects in programming
 
 
 
-## 1 Class                                                              [Move Up](#table-of-contents)
-
+## 1 Class                                                              
+                                                                       [Move Up](#table-of-contents)
 The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object. For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, the Car is the class, and wheels, speed limits, and mileage are their properties.
 
 A Class is a user-defined data type that has data members and member functions.
@@ -61,7 +60,8 @@ Data members are the data variables and member functions are the functions used 
 In the above example of class Car, the data member will be speed limit, mileage, etc and member functions can apply brakes, increase speed, etc.
 We can say that a Class in C++ is a blueprint representing a group of objects which shares some common properties and behaviors.
 
-## 2. Object                                                              [Move Up](#table-of-contents)
+## 2. Object                                                              
+                                                                           Move Up](#table-of-contents)
 An Object is an identifiable entity with some characteristics and behavior. An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
 
 
@@ -92,7 +92,8 @@ Objects take up space in memory and have an associated address like a record in 
 
 To know more about C++ Objects and Classes, refer to this article [C++ Classes and Objects](https://www.geeksforgeeks.org/c-classes-and-objects/)
 
-## 3. Encapsulation                                                          [Move Up](#table-of-contents)
+## 3. Encapsulation                                                          
+                                                                            [Move Up](#table-of-contents)
 In normal terms, Encapsulation is defined as wrapping up data and information under a single unit. In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them. Consider a real-life example of encapsulation, in a company, there are different sections like the accounts section, finance section, sales section, etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales. Now there may arise a situation when for some reason an official from the finance section needs all the data about sales in a particular month. In this case, he is not allowed to directly access the data of the sales section. He will first have to contact some other officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of the sales section and the employees that can manipulate them are wrapped under a single name “sales section”.
 
 
@@ -108,13 +109,15 @@ To know more about encapsulation, refer to this article –[Encapsulation in C++
 
 
            
-## 4. Abstraction                                                            [Move Up](#table-of-contents)
+## 4. Abstraction                                                            
+                                                                            [Move Up](#table-of-contents)
 Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. Consider a real-life example of a man driving a car. The man only knows that pressing the accelerator will increase the speed of the car or applying brakes will stop the car but he does not know how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of an accelerator, brakes, etc. in the car. This is what abstraction is.
 
 Abstraction using Classes: We can implement Abstraction in C++ using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not.
 Abstraction in Header files: One more type of abstraction in C++ can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers. 
  
-## Types of Abstraction:                                                     [Move Up](#table-of-contents)
+## Types of Abstraction:                                                  
+                                                                           [Move Up](#table-of-contents)
 1. **Data abstraction** – This type only shows the required information about the data and hides the 
                            unnecessary data.
 
@@ -122,13 +125,15 @@ Abstraction in Header files: One more type of abstraction in C++ can be header f
                               hides unnecessary information.
 
  
-## Abstraction using Classes                                                 [Move Up](#table-of-contents)
+## Abstraction using Classes                                               
+                                                                             [Move Up](#table-of-contents)
 We can implement Abstraction in C++ using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not. 
 
-## Abstraction in Header files                                               [Move Up](#table-of-contents)
+## Abstraction in Header files                                                
 One more type of abstraction in C++ can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers.
  
-## Abstraction using Access Specifiers                                      [Move Up](#table-of-contents)
+## Abstraction using Access Specifiers                                     
+                                                                             [Move Up](#table-of-contents)
 Access specifiers are the main pillar of implementing abstraction in C++. We can use access specifiers to enforce restrictions on class members. For example:
 
 - Members declared as public in a class can be accessed from anywhere in the program.
@@ -137,7 +142,8 @@ Access specifiers are the main pillar of implementing abstraction in C++. We can
 We can easily implement abstraction using the above two features provided by access specifiers. Say, the members that define the internal implementation can be marked as private in a class. And the important information needed to be given to the outside world can be marked as public. And these public members can access the private members as they are inside the class.
 
 
-**Example**                                                                  [Move Up](#table-of-contents)
+**Example**                                                                 
+                                                                            [Move Up](#table-of-contents)
 ```cpp
 // C++ Program to Demonstrate the
 // working of Abstraction
@@ -182,7 +188,8 @@ You can see in the above program we are not allowed to access the variables a an
 
 
 
-## Advantages of Data Abstraction                                           [Move Up](#table-of-contents)
+## Advantages of Data Abstraction                                           
+                                                                             [Move Up](#table-of-contents)
 - Helps the user to avoid writing the low-level code
 - Avoids code duplication and increases reusability.
 - Can change the internal implementation of the class independently without affecting the user.
@@ -199,7 +206,8 @@ To know more about C++ abstraction, refer to this article – [Abstraction in C+
 
 
 
-## 5. Polymorphism                                                           [Move Up](#table-of-contents)
+## 5. Polymorphism                                                          
+                                                                           [Move Up](#table-of-contents)
 The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A person at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person possesses different behavior in different situations. This is called polymorphism. An operation may exhibit different behaviors in different instances. The behavior depends upon the types of data used in the operation. C++ supports operator overloading and function overloading.
 
 - **Operator Overloading**: The process of making an operator exhibit different behaviors in different 
@@ -217,7 +225,8 @@ The word polymorphism means having many forms. In simple words, we can define po
 ![polymorphismexample-660x460](https://github.com/user-attachments/assets/6fc562bb-b997-477b-a168-e585cb9f454e)
 
 
-## Types of Polymorphism                                                     [Move Up](#table-of-contents)
+## Types of Polymorphism                                                   
+                                                                            [Move Up](#table-of-contents)
    1. **Compile-time Polymorphism**
    2. **Runtime Polymorphism**
     
@@ -226,8 +235,8 @@ The word polymorphism means having many forms. In simple words, we can define po
 
 ## 1. Compile-Time Polymorphism
 This type of polymorphism is achieved by function overloading or operator overloading.
-
-**A. Function Overloading**                                                 [Move Up](#table-of-contents)
+                                                                        [Move Up](#table-of-contents)
+**A. Function Overloading**                                                  
 When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading. Functions can be overloaded by changing the number of arguments or/and changing the type of arguments. In simple terms, it is a feature of object-oriented programming providing many functions that have the same name but distinct parameters when numerous tasks are listed under one function name. There are certain Rules of Function Overloading that should be followed while overloading a function.
 
 Below is the C++ program to show function overloading or compile-time polymorphism:
@@ -284,7 +293,8 @@ int main()
 
 
 
-## Output                                                                    [Move Up](#table-of-contents)
+## Output                                                                   
+                                                                       [Move Up](#table-of-contents)
 ```
 value of x is 7
 value of x is 9.132
@@ -342,7 +352,8 @@ int main()
 ```
 
 
-## Output                                                                  [Move Up](#table-of-contents)
+## Output                                                                  
+                                                                      [Move Up](#table-of-contents)
 
 ```
 12 + i9
@@ -353,7 +364,8 @@ To know more about this one, refer to the article – [Operator Overloading.](ht
 
 
 
-## 2. Runtime Polymorphism                                                 [Move Up](#table-of-contents)
+## 2. Runtime Polymorphism                                                
+                                                                           [Move Up](#table-of-contents)
 This type of polymorphism is achieved by Function Overriding. Late binding and dynamic polymorphism are other names for runtime polymorphism. The function call is resolved at runtime in [runtime polymorphism](https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-cpp/). In contrast, with compile time polymorphism, the compiler determines which function call to bind to the object after deducing it at runtime.
 
 **A. Function Overriding**
@@ -363,7 +375,8 @@ This type of polymorphism is achieved by Function Overriding. Late binding and d
 
 
 
-**Runtime Polymorphism with Data Members**                                  [Move Up](#table-of-contents)
+**Runtime Polymorphism with Data Members**                                 
+                                                                          [Move Up](#table-of-contents)
 Runtime Polymorphism cannot be achieved by data members in C++. Let’s see an example where we are accessing the field by reference variable of parent class which refers to the instance of the derived class.
 
 ```cpp
@@ -391,15 +404,15 @@ int main(void)
 	cout << d.color;
 }
 ```
-
-## Output                                                                   [Move Up](#table-of-contents)
+                                                                           [Move Up](#table-of-contents)
+## Output                                                                   
 ```
 Black
 ```
 We can see that the parent class reference will always refer to the data member of the parent class.
 
-
-**B. Virtual Function**
+                                                                [Move Up](#table-of-contents)
+**B. Virtual Function**                                               
 A [virtual function](https://www.geeksforgeeks.org/virtual-function-cpp/) is a member function that is declared in the base class using the keyword virtual and is re-defined (Overridden) in the derived class.
 
 Some Key Points About Virtual Functions:
@@ -476,7 +489,8 @@ Called GFG_Base print function
 ```
 
 
-## 5. Inheritance                                                          [Move Up](#table-of-contents)
+## 5. Inheritance                                                        
+                                                                             [Move Up](#table-of-contents)
 The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
 
 Sub Class: The class that inherits properties from another class is called Sub class or Derived Class.
@@ -492,7 +506,8 @@ To know more about Inheritance, refer to this article – [Inheritance in C++](h
 
 
 
-## 6. Dynamic Binding                                                 [Move Up](#table-of-contents)
+## 6. Dynamic Binding                                              
+                                                                           [Move Up](#table-of-contents)
 In dynamic binding, the code to be executed in response to the function call is decided at runtime. C++ has [virtual functions](https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-cpp/) to support this. Because dynamic binding is flexible, it avoids the drawbacks of static binding, which connected the function call and definition at build time.
 
 **Example:**
@@ -592,7 +607,8 @@ Printing the Derived class Content
 ```
 
 
-## Message Passing                                                     [Move Up](#table-of-contents)
+## Message Passing                                                    
+                                                                            [Move Up](#table-of-contents)
 Objects communicate with one another by sending and receiving information. A message for an object is a request for the execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function, and the information to be sent.
 
 **Example:**
