@@ -1,4 +1,4 @@
-# Table of Contents
+## Table of Contents
 
 1. [Object Oriented Programming in C++](#object-oriented-programming-in-c)
 2. [Key Concepts of OOP](#key-concepts-of-oop)
@@ -495,7 +495,7 @@ Inside first_space
 
 
  [table](#Table of Contents)
-[Table of Contents]_(#Table of Contents)_ 
+ 
 
 read more 
 [namespace](https://www.geeksforgeeks.org/namespace-in-c/)
