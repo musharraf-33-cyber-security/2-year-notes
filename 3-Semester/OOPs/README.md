@@ -52,8 +52,7 @@ Object-oriented programming – As the name suggests uses objects in programming
 
 
 
-## 1 Class                                                              
-[Move Up](#table-of-contents)
+## 1 Class                                                              [Move Up](#table-of-contents)
 
 The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object. For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, the Car is the class, and wheels, speed limits, and mileage are their properties.
 
