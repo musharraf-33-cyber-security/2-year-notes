@@ -20,14 +20,13 @@ This README file provides a collection of C++ programming exercises along with t
 7. [Write a program to solve the Towers of Hanoi problem. Use a recursive function with four parameters:](#6-greatest-common-divisor)
 8. [Towers of Hanoi](#7-towers-of-hanoi)
 9. [Write a program that inputs a line of text, tokenizes the line with function strtok and outputs the tokens in reverse order. (e.g. for input “Hello dear students” output will be “students” “dear” “Hello”)](#8-tokenize-and-reverse)
-10. [Complex Numbers](#9-complex-numbers)
-11. [String Concatenation](#10-string-concatenation)
-12. [Complex Number Enhancements](#11-complex-number-enhancements)
-13. [Shape Hierarchy](#12-shape-hierarchy)
-14. [Function Template](#13-function-template)
-15. [Exception Handling](#14-exception-handling)
-16. [Destructor Call Order](#15-destructor-call-order)
-17. [Constructor Failure](#16-constructor-failure)
+10. [String Concatenation](#10-string-concatenation)
+11. [Complex Number Enhancements](#11-complex-number-enhancements)
+12. [Shape Hierarchy](#12-shape-hierarchy)
+13. [Function Template](#13-function-template)
+14. [Exception Handling](#14-exception-handling)
+15. [Destructor Call Order](#15-destructor-call-order)
+16. [Constructor Failure](#16-constructor-failure)
 
 ### 1. Multiple Check
 ```cpp
@@ -471,7 +470,32 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+#include <string>
 
+class Concatenator {
+private:
+    std::string str;
+
+public:
+    Concatenator(const std::string& s) : str(s) {}
+
+    Concatenator operator+(const Concatenator& other) const {
+        return Concatenator(str + other.str);
+    }
+
+    void print() const {
+        std::cout << str << std::endl;
+    }
+};
+
+int main() {
+    Concatenator s1("Hello, ");
+    Concatenator s2("World!");
+    Concatenator s3 = s1 + s2;
+    s3.print();
+    return 0;
+}
 
 ```
 
@@ -483,6 +507,63 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+
+class Complex {
+private:
+    double real;
+    double imag;
+
+public:
+    Complex(double r = 0.0, double i = 0.0) : real(r), imag(i) {}
+
+    Complex operator+(const Complex& other) const {
+        return Complex(real + other.real, imag + other.imag);
+    }
+
+    Complex operator-(const Complex& other) const {
+        return Complex(real - other.real, imag - other.imag);
+    }
+
+    Complex operator*(const Complex& other) const {
+        return Complex(real * other.real - imag * other.imag,
+                       real * other.imag + imag * other.real);
+    }
+
+    bool operator==(const Complex& other) const {
+        return real == other.real && imag == other.imag;
+    }
+
+    bool operator!=(const Complex& other) const {
+        return !(*this == other);
+    }
+
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c);
+    friend std::istream& operator>>(std::istream& is, Complex& c);
+};
+
+std::ostream& operator<<(std::ostream& os, const Complex& c) {
+    os << "(" << c.real << ", " << c.imag << ")";
+    return os;
+}
+
+std::istream& operator>>(std::istream& is, Complex& c) {
+    is >> c.real >> c.imag;
+    return is;
+}
+
+int main() {
+    Complex c1(3.0, 2.0), c2(1.0, 7.0);
+    Complex c3 = c1 + c2;
+    Complex c4 = c1 * c2;
+
+    std::cout << "c1: " << c1 << std::endl;
+    std::cout << "c2: " << c2 << std::endl;
+    std::cout << "c1 + c2: " << c3 << std::endl;
+    std::cout << "c1 * c2: " << c4 << std::endl;
+
+    return 0;
+}
 
 
 ```
@@ -495,6 +576,46 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+
+class Shape {
+public:
+    virtual void draw() const = 0;
+};
+
+class TwoDShape : public Shape {
+public:
+    virtual void draw() const = 0;
+};
+
+class ThreeDShape : public Shape {
+public:
+    virtual void draw() const = 0;
+};
+
+class Circle : public TwoDShape {
+public:
+    void draw() const override {
+        std::cout << "Drawing a Circle" << std::endl;
+    }
+};
+
+class Sphere : public ThreeDShape {
+public:
+    void draw() const override {
+        std::cout << "Drawing a Sphere" << std::endl;
+    }
+};
+
+int main() {
+    Circle circle;
+    Sphere sphere;
+
+    circle.draw();
+    sphere.draw();
+
+    return 0;
+}
 
 
 ```
@@ -507,6 +628,27 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+
+template <typename T>
+class Comparator {
+public:
+    static bool isEqualTo(const T& a, const T& b) {
+        return a == b;
+    }
+};
+
+int main() {
+    int a = 5, b = 5;
+    double x = 5.5, y = 5.5;
+    std::string s1 = "hello", s2 = "hello";
+
+    std::cout << "a and b are equal: " << Comparator<int>::isEqualTo(a, b) << std::endl;
+    std::cout << "x and y are equal: " << Comparator<double>::isEqualTo(x, y) << std::endl;
+    std::cout << "s1 and s2 are equal: " << Comparator<std::string>::isEqualTo(s1, s2) << std::endl;
+
+    return 0;
+}
 
 
 ```
@@ -518,6 +660,31 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+#include <exception>
+
+class BaseException : public std::exception {
+public:
+    virtual const char* what() const noexcept {
+        return "BaseException occurred";
+    }
+};
+
+class DerivedException : public BaseException {
+public:
+    const char* what() const noexcept override {
+        return "DerivedException occurred";
+    }
+};
+
+int main() {
+    try {
+        throw DerivedException();
+    } catch (const BaseException& e) {
+        std::cout << e.what() << std::endl;
+    }
+    return 0;
+}
 
 
 ```
@@ -530,6 +697,23 @@ int main() {
 
 ```cpp
 
+#include <iostream>
+
+class MyClass {
+public:
+    MyClass() { std::cout << "Constructor called" << std::endl; }
+    ~MyClass() { std::cout << "Destructor called" << std::endl; }
+};
+
+int main() {
+    try {
+        MyClass obj;
+        throw std::runtime_error("Exception thrown");
+    } catch (const std::exception& e) {
+        std::cout << "Caught exception: " << e.what() << std::endl;
+    }
+    return 0;
+}
 
 
 ```
@@ -545,6 +729,27 @@ int main() {
    
 ```cpp
 
+#include <iostream>
+#include <stdexcept>
+
+class MyClass {
+public:
+    MyClass(bool fail) {
+        if (fail) {
+            throw std::runtime_error("Constructor failed");
+        }
+        std::cout << "Constructor succeeded" << std::endl;
+    }
+};
+
+int main() {
+    try {
+        MyClass obj(true);
+    } catch (const std::exception& e) {
+        std::cout << "Caught exception: " << e.what() << std::endl;
+    }
+    return 0;
+}
 
 
 ```
