@@ -159,13 +159,11 @@ Turing Machines have profoundly influenced the development of algorithms, comple
 
 
 
+ [Language accepted by Turing machine](https://github.com/musharraf-33-cyber-security/2-year-notes/blob/main/4%20semester/Toc/04.%20Turing%20Machines/Language%20accepted%20by%20Turing%20machine.pdf)
+
+ 
 
 
-
-
-
-
-[Language accepted by Turing machine](Language%20accepted%20by%20Turing%20machine.pdf)
 
 
 
