@@ -856,5 +856,5 @@ Each level in the hierarchy strictly contains the previous level, illustrating t
 
 ## 06. Read More
 
-- To know more about TOC , refer to this article ![Turing Machines notes](https://drive.google.com/file/d/1M3nUYI3XqOiXk_gOorKVlVIu-mGOZ69B/view)
-- To know more about TOC , refer to this article ![TOC notes](https://hamrocsit.com/semester/fourth/toc/)
+- To know more about TOC , refer to this article [Turing Machines notes](https://drive.google.com/file/d/1M3nUYI3XqOiXk_gOorKVlVIu-mGOZ69B/view)
+- To know more about TOC , refer to this article [TOC notes](https://hamrocsit.com/semester/fourth/toc/)
