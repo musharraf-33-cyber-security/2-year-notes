@@ -14,7 +14,8 @@ This repository provides a comprehensive overview of tractable and untractable p
   - [Hamiltonian Path Problem](#hamiltonian-path-problem)
   - [Traveling Salesman Problem](#traveling-salesman-problem)
 - [Contributing](#contributing)
-- [License](#license)
+- [Example Problem](Example-Problem)
+    - [Vertex Cover Problem](#license)
 
 
 
@@ -135,6 +136,6 @@ The goal is to find the shortest tour that visits each city once and returns to 
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements.
 
-## License
+## Vertex Cover Problem
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- [Vertex Cover Problem](https://www.geeksforgeeks.org/introduction-and-approximate-solution-for-vertex-cover-problem/)
