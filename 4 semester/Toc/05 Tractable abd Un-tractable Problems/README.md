@@ -16,9 +16,14 @@ This repository provides a comprehensive overview of tractable and untractable p
 - [Contributing](#contributing)
 - [License](#license)
 
+
+
 ## Introduction
 
 In computational complexity theory, problems are classified based on the resources required to solve them, particularly time and space. These classifications help us understand the difficulty and feasibility of solving various computational problems. The primary focus is on time complexity, which measures how the time to solve a problem grows with the size of the input.
+
+
+- read [P, NP, CoNP, NP hard and NP](https://www.geeksforgeeks.org/types-of-complexity-classes-p-np-conp-np-hard-and-np-complete/)
 
 ## Tractable Problems (P)
 
