@@ -195,5 +195,5 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 
 # Problem
-![Hamiltonian](https://github.com/user-attachments/assets/8553e3e2-ea50-4863-aa94-55c1062edd94)
+- [Hamiltonian](https://www.geeksforgeeks.org/proof-hamiltonian-path-np-complete/)
 - [Vertex Cover Problem](https://www.geeksforgeeks.org/introduction-and-approximate-solution-for-vertex-cover-problem/)
