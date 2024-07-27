@@ -15,6 +15,7 @@ This repository provides a comprehensive overview of tractable and untractable p
   - [Traveling Salesman Problem](#traveling-salesman-problem)
 - [Contributing](#contributing)
 - [Example Problem](Example-Problem)
+  - [Hamiltonian Path Problem](#hamiltonian-path-problem)
   - [Vertex Cover Problem](#vertex-cover-problem)
 
 
@@ -111,7 +112,7 @@ Given a graph \( G = (V, E) \) and an integer \( k \), the vertex cover problem 
 
 **Example**: For a graph with vertices \( V = \{1, 2, 3, 4\} \) and edges \( E = \{(1,2), (1,3), (2,3), (3,4)\} \), is there a vertex cover of size 2? One possible vertex cover is \( \{1, 3\} \), which covers all edges.
 
-### Hamiltonian Path Problem
+## Hamiltonian Path Problem
 
 The **Hamiltonian path problem** asks whether there exists a path in a graph that visits each vertex exactly once. This problem is NP-complete.
 
