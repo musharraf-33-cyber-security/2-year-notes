@@ -27,7 +27,7 @@ In computational complexity theory, problems are classified based on the resourc
 
 - read [P, NP, CoNP, NP hard and NP](https://www.geeksforgeeks.org/types-of-complexity-classes-p-np-conp-np-hard-and-np-complete/)
 
-## Tractable Problems (P)
+# Tractable Problems (P)
 
 **P** is the class of problems that can be solved by a deterministic Turing machine in polynomial time. These problems are considered tractable or "easy" because their solutions can be found efficiently. Polynomial time means that the time required to solve the problem increases polynomially with the input size, typically expressed as \(O(n^k)\) for some constant \(k\), where \(n\) is the size of the input.
 
@@ -40,7 +40,7 @@ A problem is in P if there exists an algorithm that can solve any instance of th
 - **Greatest Common Divisor (GCD)**: The Euclidean algorithm finds the GCD of two integers in \(O(\log \min(a, b))\) time.
 - **Matrix Multiplication**: The standard algorithm for multiplying two \(n \times n\) matrices runs in \(O(n^3)\) time, though more efficient algorithms exist.
 
-## Non-deterministic Polynomial Time (NP)
+# Non-deterministic Polynomial Time (NP)
 
 **NP** is the class of problems for which a given solution can be verified by a deterministic Turing machine in polynomial time. A problem is in NP if, given a "certificate" (or solution), we can verify its correctness in polynomial time.
 
@@ -48,12 +48,12 @@ A problem is in P if there exists an algorithm that can solve any instance of th
 
 A problem is in NP if there exists a non-deterministic Turing machine that can solve the problem in polynomial time. This means that if we could guess the correct solution, we could verify it quickly. Non-determinism allows the machine to explore many possible solutions simultaneously, effectively "guessing" the correct one.
 
-### P vs. NP
+# P vs. NP
 - **P**: Problems that can be solved in polynomial time.
 - **NP**: Problems for which solutions can be verified in polynomial time.
 - **P = NP?**: It is an open question whether every problem whose solution can be verified in polynomial time can also be solved in polynomial time. If P = NP, it would mean that all problems in NP can be solved as efficiently as they can be verified.
 
-## NP-complete Problems
+# NP-complete Problems
 
 **NP-complete** problems are a subset of NP problems that are both in NP and as hard as any problem in NP. A problem is NP-complete if:
 1. It is in NP.
@@ -63,7 +63,7 @@ A problem is in NP if there exists a non-deterministic Turing machine that can s
 
 To show that a problem is NP-complete, we use a process called polynomial-time reduction. If we can take any problem in NP and transform it into our problem in polynomial time, then solving our problem efficiently would allow us to solve all NP problems efficiently.
 
-### Importance of NP-complete Problems
+# Importance of NP-complete Problems
 NP-complete problems are significant because they represent the "hardest" problems in NP. If any NP-complete problem can be solved in polynomial time, then every problem in NP can be solved in polynomial time, implying P = NP.
 
 ### Examples of NP-complete Problems
@@ -98,7 +98,7 @@ A problem is undecidable if there is no algorithm that can solve all instances o
 
 ## Examples
 
-### Vertex Cover Problem
+# Vertex Cover Problem
 
 The **vertex cover problem** asks whether there is a subset of vertices in a graph such that each edge is incident to at least one vertex in the subset. This problem is NP-complete.
 
@@ -112,7 +112,7 @@ Given a graph \( G = (V, E) \) and an integer \( k \), the vertex cover problem 
 
 **Example**: For a graph with vertices \( V = \{1, 2, 3, 4\} \) and edges \( E = \{(1,2), (1,3), (2,3), (3,4)\} \), is there a vertex cover of size 2? One possible vertex cover is \( \{1, 3\} \), which covers all edges.
 
-## Hamiltonian Path Problem
+# Hamiltonian Path Problem
 
 The **Hamiltonian path problem** asks whether there exists a path in a graph that visits each vertex exactly once. This problem is NP-complete.
 
@@ -172,7 +172,7 @@ Given a graph \( G = (V, E) \), the Hamiltonian path problem seeks to determine 
 
 **Example**: For a graph with vertices \( V = \{A, B, C, D\} \) and edges \( E = \{(A,B), (A,C), (B,C), (B,D), (C,D)\} \), one Hamiltonian path is \( A \rightarrow B \rightarrow D \rightarrow C \).
 
-### Traveling Salesman Problem
+# Traveling Salesman Problem
 
 The **traveling salesman problem** (TSP) asks whether there exists a tour that visits a set of cities exactly once and returns to the starting city, with the total distance traveled being less than or equal to a given number. This problem is NP-hard.
 
@@ -194,6 +194,6 @@ The goal is to find the shortest tour that visits each city once and returns to 
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements.
 
 
-## Vertex Cover Problem
-
+# Problem
+![Hamiltonian](https://github.com/user-attachments/assets/8553e3e2-ea50-4863-aa94-55c1062edd94)
 - [Vertex Cover Problem](https://www.geeksforgeeks.org/introduction-and-approximate-solution-for-vertex-cover-problem/)
