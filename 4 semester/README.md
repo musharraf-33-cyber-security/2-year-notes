@@ -1,72 +1,109 @@
-#Table
-- [Chapter 01](#chapter-01)
-- [Chapter 01](#chapter-01)
-- [Chapter 01](#chapter-01)
-- [Chapter 01](#chapter-01)
-- [Chapter 01](#chapter-01)
-  
+# Theory of Computation
 
-#Chapter 01
-
-# Finite Automata & Regular Expression
-
-## 1. Basic Machine
-A basic machine in the context of automata theory is a mathematical model of computation that performs calculations automatically based on a given set of instructions. It can be represented using states and transitions between those states.
-
-## 2. Finite State Machine (FSM)
-A Finite State Machine is a computational model used to design computer programs and sequential logic circuits. It consists of a finite number of states, transitions between those states, and actions. FSMs are categorized into two types: Deterministic (DFA) and Nondeterministic (NDFA).
-
-## 3. Transition Graph
-A Transition Graph is a visual representation of a finite automaton. It consists of nodes (states) and directed edges (transitions) that show how the automaton moves from one state to another based on input symbols.
-
-## 4. Transition Matrix
-A Transition Matrix is a tabular representation of a finite automaton. Each cell of the matrix specifies the next state for a given current state and input symbol. It provides a convenient way to implement the transition function.
-
-## 5. Deterministic and Nondeterministic Finite Automaton (DFA & NDFA)
-- **DFA (Deterministic Finite Automaton)**: A DFA has a single unique transition for each symbol in the alphabet from each state. It has exactly one transition path for each input.
-- **NDFA (Nondeterministic Finite Automaton)**: An NDFA can have multiple transitions for the same symbol from a given state. It allows for multiple possible paths for each input symbol, including epsilon (ε) transitions (transitions without consuming any input).
-
-## 6. Equivalence of DFA and NDFA
-DFAs and NDFAs are equivalent in terms of the languages they recognize. For every NDFA, there exists an equivalent DFA that recognizes the same language. The conversion process from an NDFA to a DFA is called the subset construction or powerset construction.
-
-## 7. Decision Properties
-Decision properties refer to the problems related to finite automata that can be algorithmically solved. Common decision properties include:
-- **Emptiness Problem**: Checking if the language recognized by an automaton is empty.
-- **Finiteness Problem**: Checking if the language recognized by an automaton is finite.
-- **Membership Problem**: Checking if a given string belongs to the language recognized by an automaton.
-
-## 8. Minimization of Finite Automata
-Minimization involves reducing the number of states in a finite automaton while preserving the language it recognizes. The goal is to obtain a minimal DFA (DFA with the fewest states). Techniques for minimization include state equivalence and partition refinement methods.
-
-## 9. Mealy & Moore Machines
-- **Mealy Machine**: A finite state machine where the output is determined by both the current state and the current input.
-- **Moore Machine**: A finite state machine where the output is determined solely by the current state.
-
-## 10. Alphabet, Words, Operations
-- **Alphabet**: A finite, non-empty set of symbols (Σ).
-- **Words**: Finite sequences of symbols from the alphabet. Also known as strings.
-- **Operations**: Operations on words include concatenation, union, intersection, and complementation.
-
-## 11. Regular Sets
-Regular sets (or regular languages) are the languages that can be recognized by finite automata. They can be described using regular expressions and can be obtained through operations such as union, concatenation, and Kleene star.
-
-## 12. Relationship and Conversion between Finite Automata and Regular Expressions
-Finite automata and regular expressions are two equivalent representations of regular languages. Regular expressions can be converted into finite automata using construction methods such as Thompson's construction, and finite automata can be converted into regular expressions using state elimination techniques.
-
-## 13. Designing Regular Expressions
-Designing regular expressions involves creating patterns that describe a set of strings. Regular expressions use operators such as union (|), concatenation, and Kleene star (*) to construct patterns.
-
-## 14. Closure Properties of Regular Sets
-Regular sets are closed under various operations, meaning the result of these operations on regular sets is also a regular set. Closure properties include:
-- **Union**: The union of two regular sets is a regular set.
-- **Intersection**: The intersection of two regular sets is a regular set.
-- **Complement**: The complement of a regular set is a regular set.
-- **Concatenation**: The concatenation of two regular sets is a regular set.
-- **Kleene Star**: The Kleene star of a regular set is a regular set.
+## Table of Contents
+- [Chapter 01: Finite Automata & Regular Expression](#chapter-01-finite-automata--regular-expression)
+  - [Finite State Machines](#finite-state-machines)
+  - [Deterministic and Nondeterministic Finite Automata (DFA and NDFA)](#deterministic-and-nondeterministic-finite-automata-dfa-and-ndfa)
+  - [Mealy & Moore Machines](#mealy--moore-machines)
+  - [Regular Expressions](#regular-expressions)
+  - [Pumping Lemma](#pumping-lemma)
+- [Chapter 02: Context-Free Grammars (CFG)](#chapter-02-context-free-grammars-cfg)
+  - [CFG Basics](#cfg-basics)
+  - [Parsing and Ambiguity](#parsing-and-ambiguity)
+- [Chapter 03: Pushdown Automaton (PDA)](#chapter-03-pushdown-automaton-pda)
+  - [Nondeterministic PDA](#nondeterministic-pda)
+  - [Deterministic PDA](#deterministic-pda)
+- [Chapter 04: Turing Machines](#chapter-04-turing-machines)
+  - [Introduction](#introduction)
+  - [Universal TM & Other Modifications](#universal-tm--other-modifications)
+- [Chapter 05: Tractable and Untractable Problems](#chapter-05-tractable-and-untractable-problems)
+  - [Complexity Classes](#complexity-classes)
 
 ---
 
+## Chapter 01: Finite Automata & Regular Expression
 
+### Finite State Machines
+Finite State Machines (FSM) are a computational model used to design computer programs and sequential logic circuits. An FSM is composed of:
+- **States**: Different configurations of the machine.
+- **Transitions**: Rules for moving from one state to another.
+- **Alphabet**: A set of symbols that the machine reads.
+- **Basic Machine**: Fundamental concepts of states and transitions.
+- **Transition Graph**: A visual representation of states and transitions.
+- **Transition Matrix**: A matrix representing state transitions.
 
+### Deterministic and Nondeterministic Finite Automata (DFA and NDFA)
+- **DFA**: Every state has exactly one transition for each symbol in the alphabet.
+- **NDFA**: States can have zero, one, or multiple transitions for each symbol.
+- **Equivalence of DFA and NDFA**: Both recognize the same set of regular languages.
+- **Decision Properties**: Important properties like emptiness, finiteness, and membership.
+- **Minimization of Finite Automata**: Techniques to reduce the number of states in DFA.
+  
+### Mealy & Moore Machines
+- **Mealy Machines**: Output is determined by the current state and the input symbol.
+- **Moore Machines**: Output is determined only by the current state.
 
+### Regular Expressions
+- **Alphabet, Words, and Operations**: Fundamental components of regular expressions.
+- **Relationship and Conversion**: Converting between finite automata and regular expressions.
+- **Designing Regular Expressions**: Crafting expressions to match patterns.
+- **Closure Properties of Regular Sets**: Properties under operations like union, intersection, and concatenation.
 
+### Pumping Lemma
+- **Application of Pumping Lemma**: Used to prove certain languages are not regular.
+- **Power of Languages**: Understanding the limitations of regular languages.
+
+## Chapter 02: Context-Free Grammars (CFG)
+
+### CFG Basics
+- **Derivations and Languages**: Generating strings from the grammar.
+- **Relationship Between Derivation and Derivation Trees**: Visualizing derivations.
+- **Leftmost and Rightmost Derivation**: Different strategies for deriving strings.
+- **Sentential Forms**: Intermediate forms during derivation.
+
+### Parsing and Ambiguity
+- **Simplification of CFG**: Removing useless, nullable, and unit productions.
+- **Normal Forms**: Converting to Greibach Normal Form (GNF) and Chomsky Normal Form (CNF).
+- **Problems Related to CNF and GNF**: Challenges and solutions.
+- **Membership Problem**: Determining if a string belongs to a language.
+
+## Chapter 03: Pushdown Automaton (PDA)
+
+### Nondeterministic PDA
+- **Definitions**: Introduction to PDAs and their components.
+- **PDA and Context-Free Languages (CFL)**: PDAs recognize CFLs.
+- **CFG for PDA**: Constructing PDAs for given CFGs.
+
+### Deterministic PDA
+- **Deterministic PDA and Deterministic CFL**: Understanding deterministic context-free languages.
+- **The Pumping Lemma for CFLs**: Proving languages are not context-free.
+- **Closure Properties and Decision Properties for CFLs**: Important properties of CFLs.
+
+## Chapter 04: Turing Machines
+
+### Introduction
+- **Definition of Turing Machine (TM)**: Basic components and operation.
+- **TM as Language Acceptors and Transducers**: TMs accept languages and compute functions.
+- **Computable Languages and Functions**: Languages that can be recognized by TMs.
+
+### Universal TM & Other Modifications
+- **Multiple Tracks Turing Machine**: TMs with multiple tapes.
+- **Hierarchy of Formal Languages**: Classification of languages.
+- **Recursive & Recursively Enumerable Languages**: Definitions and properties.
+- **Properties of RL and REL**: Important characteristics.
+- **Introduction to Context-Sensitive Grammars and Languages**: More powerful than CFGs.
+- **The Chomsky Hierarchy**: Four levels of languages.
+
+## Chapter 05: Tractable and Untractable Problems
+
+### Complexity Classes
+- **P, NP, NP-complete, and NP-hard Problems**: Understanding computational complexity.
+- **Undecidability**: Problems that cannot be solved by TMs.
+- **Examples of Problems**: Examples like vertex cover, Hamiltonian path, and traveling salesman problem.
+
+---
+
+## References
+- [Automata Theory (Wikipedia)](https://en.wikipedia.org/wiki/Automata_theory)
+- [Introduction to the Theory of Computation by Michael Sipser](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X)
+- [Formal Languages and Automata (MIT OpenCourseWare)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-045j-automata-computability-and-complexity-spring-2011/)
