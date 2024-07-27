@@ -160,18 +160,61 @@ public class Main {
 
 [Run](https://www.programiz.com/java-programming/online-compiler/)
 ```java
-// Import Applet package
-import java.applet.Applet;
-import java.awt.Graphics;
-
-/* <applet code="MyApplet.class" width="300" height="300"></applet> */
-
-public class MyApplet extends Applet {
-    public void paint(Graphics g) {
-        g.drawString("Hello, Applet!", 20, 20);
-    }
-}
+import java.applet.*; 
+import java.awt.*; 
+public class MyApplet extends Applet 
+{ 
+int height, width; 
+public void init() 
+ { 
+  height = getSize().height; 
+  width = getSize().width; 
+setName("MyApplet"); 
+ } 
+public void paint(Graphics g) 
+ { 
+  g.drawRoundRect(10, 30, 120, 120, 2, 3); 
+ } 
+} 
+ 
 ```
+
+
+![image](https://github.com/user-attachments/assets/644e45c4-13e0-480d-a4b0-374a722149a8)
+
+
+
+
+# How to run an Applet Program 
+In the same manner as you compiled your console programs, an Applet program is compiled. There are, however, two methods of running an applet. 
+
+Running the Applet in a web browser compatible with Java. 
+Use an applet viewer, like the normal instrument, to view applets. In a window, an applet viewer runs your applet. 
+Create brief HTML file in the same folder to execute an Applet in a web browser. Include the following code in the file's body tag. (Applet tag loads class Applet). 
+
+```
+< applet code = "MyApplet" width=400 height=400 > 
+< /applet > 
+```
+
+
+Run the HTML file 
+
+
+![image](https://github.com/user-attachments/assets/43ff825d-f219-4de8-8df2-71ac3f41aae2)
+
+
+
+
+
+# Running Applet using Applet Viewer 
+Write a brief HTML file as mentioned above to run an Applet with an applet viewer. If you name it as run.htm, your applet program will operate the following command. 
+```
+f:/>appletviewer run.htm 
+```
+
+
+
 
 ### 7. Java Program to Show Implementation of Mouse Events and Keyboard Events
 
