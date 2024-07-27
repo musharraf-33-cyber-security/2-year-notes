@@ -17,6 +17,7 @@ This repository provides a comprehensive overview of tractable and untractable p
 - [Example Problem](Example-Problem)
   - [Hamiltonian Path Problem](#hamiltonian-path-problem)
   - [Vertex Cover Problem](#vertex-cover-problem)
+  - [read more about problem](#problem)
 
 
 
