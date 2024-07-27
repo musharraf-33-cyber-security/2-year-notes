@@ -15,7 +15,7 @@ This repository provides a comprehensive overview of tractable and untractable p
   - [Traveling Salesman Problem](#traveling-salesman-problem)
 - [Contributing](#contributing)
 - [Example Problem](Example-Problem)
-    - [Vertex Cover Problem](#license)
+  - [Vertex Cover Problem](#vertex-cover-problem)
 
 
 
@@ -135,6 +135,7 @@ The goal is to find the shortest tour that visits each city once and returns to 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss improvements.
+
 
 ## Vertex Cover Problem
 
