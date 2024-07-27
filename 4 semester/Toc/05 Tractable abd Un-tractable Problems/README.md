@@ -20,7 +20,7 @@ This repository provides a comprehensive overview of tractable and untractable p
 
 
 
-## Introduction
+# Introduction
 
 In computational complexity theory, problems are classified based on the resources required to solve them, particularly time and space. These classifications help us understand the difficulty and feasibility of solving various computational problems. The primary focus is on time complexity, which measures how the time to solve a problem grows with the size of the input.
 
