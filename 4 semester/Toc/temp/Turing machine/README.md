@@ -16,6 +16,15 @@ Turing machines are an important tool for studying the limits of computation and
 
 A Turing machine consists of a tape of infinite length on which read and writes operation can be performed. The tape consists of infinite cells on which each cell either contains an input symbol or a special symbol called blank. It also consists of a head pointer which points to the cell currently being read and it can move in both directions.
 
+
+
+
+
+
+<img src="![image](https://github.com/user-attachments/assets/fb68225a-ef12-47f3-9c85-55bc59b8e71a)" width="700" height="500">
+
+
+
 ## Figure: Turing Machine
 
 A TM is expressed as a 7-tuple (Q, T, B, Σ, δ, q0, F) where:
@@ -77,14 +86,8 @@ Using move ?(q3, B) = halt, it will stop and accept.
 ## Question
 A single tape Turing Machine M has two states q0 and q1, of which q0 is the starting state. The tape alphabet of M is {0, 1, B} and its input alphabet is {0, 1}. The symbol B is the blank symbol used to indicate the end of an input string. The transition function of M is described in the following table:
 
-| Current State | Read Symbol | Write Symbol | Move Direction | Next State |
-|---------------|-------------|--------------|----------------|------------|
-| q0            | 0           | 0            | R              | q1         |
-| q0            | 1           | 1            | R              | q1         |
-| q0            | B           | B            | R              | q0         |
-| q1            | 0           | 0            | R              | q0         |
-| q1            | 1           | 1            | R              | q0         |
-| q1            | B           | B            | R              | q1         |
+ ![image](https://github.com/user-attachments/assets/5bc03090-c105-424a-bc17-e546a3a3cd29)
+
 
 The table is interpreted as illustrated below. The entry (q1, 1, R) in row q0 and column 1 signifies that if M is in state q0 and reads 1 on the current tape square, then it writes 1 on the same tape square, moves its tape head one position to the right, and transitions to state q1. Which of the following statements is true about M?
 
@@ -96,59 +99,52 @@ The table is interpreted as illustrated below. The entry (q1, 1, R) in row q0 an
 ### Solution
 Let us see whether the machine halts on the string `1`. Initially, the state will be q0, and the head will point to 1 as:
 
-```
-_1_
- ^ (q0)
-```
+![image](https://github.com/user-attachments/assets/97304b9c-576e-410a-aebb-2b2a185b54f2)
+
 
 Using δ(q0, 1) = (q1, 1, R), it will move to state q1 and the head will move to the right as:
 
-```
-_1_
-  ^ (q1)
-```
+![image](https://github.com/user-attachments/assets/733038ff-e32d-4092-a3bd-fa985ae036e3)
+
 
 Using δ(q1, B) = (q0, B, L), it will move to state q0 and the head will move to the left as:
 
-```
-_1_
- ^ (q0)
-```
+![image](https://github.com/user-attachments/assets/6ef31a6d-f05e-4438-b80f-158fad94ec24)
+
 
 It will run in the same way again and again and not halt.
 
 Option D says M halts on all strings ending with 1, but it is not halting for 1. So, option D is incorrect.
 
-Let us see whether the machine halts on the string `0`. Initially, the state will be q0, and the head will point to 0 as:
+Let us see whether the machine halts on the string `0`. Initially, the state will be q0, and the head will point to 1 as:
 
-```
-_0_
- ^ (q0)
-```
+
+![image](https://github.com/user-attachments/assets/b9b4f7b0-25c9-412b-8739-0e5625594c5d)
+
 
 Using δ(q0, 0) = (q1, 0, R), it will move to state q1 and the head will move to the right as:
 
-```
-_0_
-  ^ (q1)
-```
+
+![image](https://github.com/user-attachments/assets/570bef89-d443-4f8f-ab17-e0a439e3cd7b)
+
 
 Using δ(q1, B) = (q0, B, L), it will move to state q0 and the head will move to the left as:
 
-```
-_0_
- ^ (q0)
-```
+
+![image](https://github.com/user-attachments/assets/b327a63e-c404-4faf-82e0-f69a740386c3)
+
 
 It will run in the same way again and again and not halt.
 
 Option C says M halts on all strings ending with 0, but it is not halting for 0. So, option C is incorrect.
 
 Option B says that TM does not halt for any string (00 + 1)*. But NULL string is a part of (00 + 1)* and TM will halt for NULL string. For NULL string, the tape will be:
+ 
+ 
+ ![image](https://github.com/user-attachments/assets/72e9f69c-ea95-4399-93b4-1a00b4dfccd4)
 
-```
-_
- ^ (q0)
+ 
+
 ```
 
 Using δ(q0, B) = halt, TM will halt. As TM is halting for NULL, this option is also incorrect.
