@@ -1,3 +1,11 @@
+
+-Read more <a href="https://cse.poriyaan.in/topic/types-of-grammar-and-chomsky-s-hi-hierarchy-of-languages-51052/" target="_blank">Grammar</a>
+
+
+
+
+
+
 ## Grammar , Type of Grammar
 
 ## Grammar in theory of computation is a finite set of formal rules that are generating syntactically correct sentences.
