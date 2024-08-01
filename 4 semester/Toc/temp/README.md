@@ -87,9 +87,9 @@ Type-3 grammars generate regular languages. These languages are exactly all lang
 
 Type 3 should be in the given form only:
 ```
-- V --> VT / T\ (left-regular grammar)
+ V --> VT / T\ (left-regular grammar)
   - or
-- V --> TV /T (right-regular grammar)
+ V --> TV /T (right-regular grammar)
 
 ```
 **For example**:
@@ -99,11 +99,11 @@ S --> a
 The above form is called strictly regular grammar.
 
 There is another form of regular grammar called extended regular grammar. In this form:
-
-- \(V --> VT^* / T^*\) (extended left-regular grammar)
-  - or
-- \(V --> T^*V /T^*\) (extended right-regular grammar)
-
+```
+V --> VT* / T* (extended left-regular grammar)
+                     or
+V --> V*T / T*  (extended right-regular grammar)
+```
 **For example**:
 ```
 S --> ab
