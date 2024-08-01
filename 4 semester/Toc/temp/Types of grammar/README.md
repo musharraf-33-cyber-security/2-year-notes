@@ -1,9 +1,4 @@
-
--Read more <a href="https://cse.poriyaan.in/topic/types-of-grammar-and-chomsky-s-hi-hierarchy-of-languages-51052/" target="_blank">Grammar</a>
-
-
-
-
+ Read more <a href="https://cse.poriyaan.in/topic/types-of-grammar-and-chomsky-s-hi-hierarchy-of-languages-51052/" target="__blank">Grammar</a>
 
 
 ## Grammar , Type of Grammar
