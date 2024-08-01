@@ -145,9 +145,9 @@ Option B says that TM does not halt for any string (00 + 1)*. But NULL string is
 
  
 
-```
 
+ 
 Using δ(q0, B) = halt, TM will halt. As TM is halting for NULL, this option is also incorrect.
 
 So, option (A) is correct.
-```
+ 
