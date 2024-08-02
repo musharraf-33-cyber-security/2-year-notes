@@ -45,7 +45,13 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
   ![image](https://github.com/user-attachments/assets/7c0c5e6e-36fc-43e4-be16-5b0c28554e38)
 
 
- 
+
+
+
+
+
+ ```
+
  +------------------+
 | Grandparent Class |
 +-------------------+
@@ -64,7 +70,7 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
 | Child Class     |
 +-----------------+
 
-
+ ```
 
 
 
@@ -76,6 +82,7 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
 
 
 
+```
                           +-----------------+
                           |   Super Class   |
                           +-----------------+
@@ -92,7 +99,7 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
 
 
 
-
+```
 
 
 
@@ -107,7 +114,7 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
 
 
 
-
+```
 
     +-----------------+        +-----------------+
     |   Interface 1   |        |   Interface 2   |
@@ -126,7 +133,7 @@ read [types of inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
    +-----------------+       +-----------------+
    |   Sub Class 1   |       |   Sub Class 2   |
    +-----------------+       +-----------------+
-
+```
 
 
 
