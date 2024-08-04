@@ -99,3 +99,147 @@ Sum: 568
 Data type of num_sum: <class 'int'>
 ```
 
+
+
+
+
+
+#  WAP to show  implementation of Python Operators
+- 1. Arithmetic Operators
+- 2. Assignment Operators
+- 3. Comparison Operators
+- 4. Logical Operators
+- 5. Bitwise Operators
+- 6. Special Operators
+
+
+```py
+a = int(input("Enter first number \t "))
+b = int(input("Enter Second number "))
+
+
+print ('Sum: ', a + b)  
+ 
+print ('Subtraction: ', a - b)   
+
+ 
+print ('Multiplication: ', a * b)  
+
+ 
+print ('Division: ', a / b) 
+
+ 
+print ('Floor Division: ', a // b)
+
+ 
+print ('Modulo: ', a % b)  
+
+ 
+print ('Power: ', a ** b)
+
+
+```
+
+## output
+
+```
+Enter first number 	 7
+Enter Second number 8
+Sum:  15
+Subtraction:  -1
+Multiplication:  56
+Division:  0.875
+Floor Division:  0
+Modulo:  7
+Power:  5764801
+````
+
+
+
+
+#  WAP to show  implementation of  Assignment Operators
+- Addition Assignment	
+- Subtraction Assignment	
+- Multiplication Assignment
+- Division Assignment	
+- Remainder Assignment
+- Exponent Assignment
+
+```
+ 
+a = int(input("assign first  value  \t "))
+b = int(input("assign second  value "))
+
+
+
+print("Assignment Operators")
+print ( a )  
+print (b)   
+
+print("\nAddition Assignment && Subtraction Assignment ")
+
+a +=1  # a = a + 1
+b -=1
+print( "Addition is :", a)
+print ("Subtraction is :",b)
+
+
+print("\nMultiplication Assignment")
+a *= b  # a = a * b
+print(a)
+ 
+print("\nDivision Assignment ")
+
+a  /=b # a =  a/b
+print(a) 
+
+
+
+print("\nRemainder Assignment ") 
+a %=b
+print (a)
+
+
+print("\n Exponent Assignment ")
+a **= b
+print (a)
+  
+
+```
+
+## Output
+
+```
+assign first  value  	 6
+assign second  value 6
+Assignment Operators
+6
+6
+
+Addition Assignment && Subtraction Assignment 
+Addition is : 7
+Subtraction is : 5
+
+Multiplication Assignment
+35
+
+Division Assignment 
+7.0
+
+Remainder Assignment 
+2.0
+
+ Exponent Assignment 
+32.0
+```
+
+
+
+
+#  WAP to show  implementation of Comparison Operators
+
+```
+ 
+```
+
+
