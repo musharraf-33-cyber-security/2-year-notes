@@ -165,7 +165,7 @@ Power:  5764801
 - Remainder Assignment
 - Exponent Assignment
 
-```
+```py
  
 a = int(input("assign first  value  \t "))
 b = int(input("assign second  value "))
@@ -238,8 +238,47 @@ Remainder Assignment
 
 #  WAP to show  implementation of Comparison Operators
 
+```py
+
+a = 5
+
+b = 2
+
+# equal to operator
+print('a == b =', a == b)
+
+# not equal to operator
+print('a != b =', a != b)
+
+# greater than operator
+print('a > b =', a > b)
+
+# less than operator
+print('a < b =', a < b)
+
+# greater than or equal to operator
+print('a >= b =', a >= b)
+
+# less than or equal to operator
+print('a <= b =', a <= b)
+
 ```
- 
+
+# output 
+```
+a == b = False
+a != b = True
+a > b = True
+a < b = False
+a >= b = True
+a <= b = False
+```
+
+
+
+#  WAP to show  implementation of Logical Operators
+```py
+
 ```
 
 
