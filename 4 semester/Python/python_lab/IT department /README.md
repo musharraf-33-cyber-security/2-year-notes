@@ -43,3 +43,27 @@ programiz.com
 - ****
 
 
+
+
+
+```py
+
+ 
+i=eval(input("Enter integer number  :"))
+
+f=eval(input("Enter flot number  :"))
+n=i+f
+print("successfully Converting datatype : ",n)
+print(type(n))
+
+
+```
+
+# Output
+```
+Enter integer number  :354788
+Enter flot number  :334.9
+successfully Converting datatype :  355122.9
+<class 'float'>
+```
+
