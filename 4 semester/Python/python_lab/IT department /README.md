@@ -47,23 +47,55 @@ programiz.com
 
 
 ```py
+  
 
- 
-i=eval(input("Enter integer number  :"))
+i=int(input("Enter integer number  :"))
 
 f=eval(input("Enter flot number  :"))
+print("\n\nImplicit Type Conversion")
 n=i+f
 print("successfully Converting datatype : ",n)
 print(type(n))
+
+
+
+
+ 
+print(" \n\n\n\nExplicit Type Conversion") 
+num_string = '12'
+ 
+print("Data type of num_string before Type Casting:",type(num_string))
+
+# explicit type conversion
+num_string = int(num_string)
+
+print("Data type of num_string after Type Casting:",type(num_string))
+
+num_sum = i + num_string
+
+print("Sum:",num_sum)
+print("Data type of num_sum:",type(num_sum))
 
 
 ```
 
 # Output
 ```
-Enter integer number  :354788
-Enter flot number  :334.9
-successfully Converting datatype :  355122.9
+Enter integer number  :556
+Enter flot number  :5.6
+
+
+Implicit Type Conversion
+successfully Converting datatype :  561.6
 <class 'float'>
+ 
+
+
+
+Explicit Type Conversion
+Data type of num_string before Type Casting: <class 'str'>
+Data type of num_string after Type Casting: <class 'int'>
+Sum: 568
+Data type of num_sum: <class 'int'>
 ```
 
