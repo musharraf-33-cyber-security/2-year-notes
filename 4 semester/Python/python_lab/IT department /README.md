@@ -549,7 +549,7 @@ Hello, Alice!
 ```
 
 # WAP to show  implementation of Files opration
-```pr
+```py
  
 with open("example.txt", "w") as file:
     file.write("Hello, world!\n")
@@ -584,7 +584,7 @@ This is an additional line.
 ````
 
 # WAP to show  implementation of Python Exception Handling
-```pr
+```py
 a=10
 b=0
 
@@ -603,7 +603,7 @@ Error: Can't divide by zero.
 ````
 
 # WAP to show  implementation of  Object & Class
-```pr
+```py
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -626,7 +626,7 @@ Hi, I'm Alice and I'm 30 years old.
 
  
 # WAP to show  implementation of Date and Time
-```pr
+```py
 import datetime
 
  
