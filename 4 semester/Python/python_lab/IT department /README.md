@@ -328,4 +328,73 @@ False
 
 
 
+#  WAP to show  implementation of Conditional Statements
+- **if...else Statement**
+- **if…elif…else Statement**
+- **Nested if Statements**
+
+```py
+a = int(input("Enter first  value "))
+b = int(input("Enter Second  value "))
+
+print("\n if...else Statement")
+if a >b:
+    print(a,"is greater then ",b)
+else:
+    print(b,"is greater then",a)
+
+
+
+print("\nif…elif…else Statement")
+if a  >= 0  :
+    print(a, " is  Positive number ")
+   
+    
+elif a==0  :
+    print(a,"is neither negitive and positive ")
+     
+    
+else:
+    print(a, "is negitive numbr ")
+ 
+ 
+ 
+print("\nNested if Statement")
+number = 5
+
+# outer if statement
+if number >= 0:
+    # inner if statement
+    if number == 0:
+      print('Number is 0')
+    
+    # inner else statement
+    else:
+        print('Number is positive')
+
+# outer else statement
+else:
+    print('Number is negative') 
+    
+```
+
+# output
+```
+Enter first  value 5
+Enter Second  value 6
+
+ if...else Statement
+6 is greater then 5
+
+if…elif…else Statement
+5  is  Positive number 
+
+Nested if Statement
+Number is positive
+```
+
+
+
+# WAP to show  implementation of 
+
 
