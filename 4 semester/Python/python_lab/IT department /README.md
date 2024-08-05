@@ -279,6 +279,53 @@ a <= b = False
 #  WAP to show  implementation of Logical Operators
 ```py
 
+print("\n Logical Operators")
+a = 5
+b = 6
+
+print((a > 2) and (b >= 6))   
+
+print((a > 2) or (b >= 6)) 
+
+print("\n Special operators :")
+x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1,2,3]
+y3 = [1,2,3]
+print(x1 is not y1)   
+print(x2 is y2)   
+print(x3 is y3)   
+
+print("\nMembership operators :")
+message = 'Hello world'
+dict1 = {1:'a', 2:'b'}
+print('H' in message)   
+print('hello' not in message)  
+print(1 in dict1)   
+print('a' in dict1)  
+
 ```
+
+## output
+```
+Logical Operators
+True
+True
+
+ Special operators :
+False
+True
+False
+
+Membership operators :
+True
+True
+True
+False
+```
+
+
 
 
