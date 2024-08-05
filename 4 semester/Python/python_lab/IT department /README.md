@@ -454,4 +454,37 @@ correct paswsword
 
  
 
+- **3 break Statement with for Loop**
+```py
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+print("break work successfully .......")
+    
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+print("continue work successfully .......")
+    
+
+
+```
+## output
+```
+0
+1
+2
+break work successfully .......
+0
+1
+2
+4
+continue work successfully .......
+```
+
+
+
+
 
