@@ -484,7 +484,178 @@ break work successfully .......
 continue work successfully .......
 ```
 
+# WAP to show  implementation of Python Data types
+ 
+```py
+x = 10
+print(f"Integer: {x}, Type: {type(x)}")
+
+# Float
+y = 10.5
+print(f"Float: {y}, Type: {type(y)}")
+
+# String
+name = "Alice"
+print(f"String: {name}, Type: {type(name)}")
+
+# List
+fruits = ["apple", "banana", "cherry"]
+print(f"List: {fruits}, Type: {type(fruits)}")
+
+# Dictionary
+person = {"name": "Bob", "age": 25}
+print(f"Dictionary: {person}, Type: {type(person)}")
+
+# Boolean
+is_active = True
+print(f"Boolean: {is_active}, Type: {type(is_active)}")
+
+```
+
+## output
+```
+Integer: 10, Type: <class 'int'>
+Float: 10.5, Type: <class 'float'>
+String: Alice, Type: <class 'str'>
+List: ['apple', 'banana', 'cherry'], Type: <class 'list'>
+Dictionary: {'name': 'Bob', 'age': 25}, Type: <class 'dict'>
+Boolean: True, Type: <class 'bool'>
+```
 
 
+# WAP to show  implementation of  Functions
+
+```py
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("Alice"))
+
+# Function with default argument
+def add(a, b=5):
+    return a + b
+
+print(add(10))
+print(add(10, 20))
+
+```
+
+## output
+
+```
+Hello, Alice!
+15
+30
+```
+
+# WAP to show  implementation of Files opration
+```pr
+ 
+with open("example.txt", "w") as file:
+    file.write("Hello, world!\n")
+
+ 
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("Content after writing:")
+    print(content)
+
+ 
+with open("example.txt", "a") as file:
+    file.write("This is an additional line.\n")
+
+ 
+with open("example.txt", "r") as file:
+    content = file.read()
+    print("Content after appending:")
+    print(content)
+
+```
+
+##  output
+```
+Content after writing:
+Hello, world!
+
+Content after appending:
+Hello, world!
+This is an additional line.
+
+````
+
+# WAP to show  implementation of Python Exception Handling
+```pr
+a=10
+b=0
+
+try:
+    c=a/b
+    print(c)
+except:
+    print("Error: Can't divide by zero. ")
+
+```
+
+##  output
+```
+ERROR!
+Error: Can't divide by zero. 
+````
+
+# WAP to show  implementation of  Object & Class
+```pr
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        return f"Hi, I'm {self.name} and I'm {self.age} years old."
+
+ 
+alice = Person("Alice", 30)
+
+ 
+print(alice.introduce())  
+```
+
+##  output
+```
+Hi, I'm Alice and I'm 30 years old.
+````
+
+ 
+# WAP to show  implementation of Date and Time
+```pr
+import datetime
+
+ 
+current_datetime = datetime.datetime.now()
+print("Current date and time:", current_datetime)
+
+ 
+year = current_datetime.year
+month = current_datetime.month
+day = current_datetime.day
+hour = current_datetime.hour
+minute = current_datetime.minute
+second = current_datetime.second
+
+print(f"Year: {year}, Month: {month}, Day: {day}")
+print(f"Time: {hour}:{minute}:{second}")
+
+ 
+formatted_date = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+print("Formatted date:", formatted_date)
+
+```
+
+##  output
+```
+Current date and time: 2024-08-05 11:54:27.628542
+Year: 2024, Month: 8, Day: 5
+Time: 11:54:27
+Formatted date: 2024-08-05 11:54:27
+````
 
 
