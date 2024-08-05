@@ -395,6 +395,63 @@ Number is positive
 
 
 
-# WAP to show  implementation of 
+# WAP to show  implementation of  Loop 
+- **1 for loop**
+```py
+print("\n for loop ")
+
+languages = ['Swift', 'Python', 'Go']
+
+ 
+for lang in languages:
+    print(lang)
+    
+    
+language = 'Python'
+ 
+for x in language:
+    print(x)
+    
+
+```
+# output
+```
+Swift
+Python
+Go
+P
+y
+t
+h
+o
+n
+0
+1
+2
+3
+```
+
+
+- **2 while loop**
+
+```py
+password = "shivam"
+p = input("Enter passwor for login:\t")
+while password != p:
+    print("worng password retry!!")
+    p=input("Please Enetr Again ")
+else:
+    print("correct paswsword ")
+
+```
+## output
+```
+Enter passwor for login:	1234
+worng password retry!!
+Please Enetr Again shivam
+correct paswsword 
+```
+
+ 
 
 
